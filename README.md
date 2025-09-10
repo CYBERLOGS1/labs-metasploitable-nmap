@@ -31,13 +31,13 @@ To practice network scanning and service enumeration using **Nmap** on a vulnera
 ## 🌐 Network Diagram# labs-metasploitable-nmap
 Nmap scanning and enumeration on Metasploitable 2 virtual machine 
 [Internet]
-  │
-  │ (Bridged Adapter - Promiscuous Allow All)
-  │
+- │
+- │ (Bridged Adapter - Promiscuous Allow All)
+- │
 [Kali Linux VM]
-  │
-  │ (Host-Only Adapter - Promiscuous Allow VMs)
-  │
+- │
+- │ (Host-Only Adapter - Promiscuous Allow VMs)
+- │
 [Metasploitable 2 VM]
 
 ---
