@@ -64,7 +64,14 @@ Nmap scanning and enumeration on Metasploitable 2 virtual machine
   - 80 (HTTP)
   -  139/445 (SMB)
   - 3306 (MySQL)
-- # Open Ports Identified: vsftpd, OpenSSH, Apache, Samba, MySQL, Postfix
+    
+- # Open Ports Identified:
+  - vsftpd
+  - OpenSSH
+  - Apache
+  - Samba
+  - MySQL
+  - Postfix
 
 ## ⚠️ Challenges
 - Initially couldn’t get connectivity using NAT.
