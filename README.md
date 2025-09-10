@@ -45,5 +45,41 @@ Nmap scanning and enumeration on Metasploitable 2 virtual machine
 ## 🚀 Steps Performed
 1. Verified communication with Metasploitable:  
    ```bash
-   ping 192.168.56.105
+   ping "the ip address"
+   ```
+2. Ran a basic nmap scan:  
+   ```bash
+   nmap "the ip address"
+   ```
+3. Performed a version/service detection scan:  
+   ```bash
+   nmap -sV "the ip address"
+   ```
+## 📊 Findings
+- # Open Ports Identified:
+  -  21 (FTP)
+  - 22 (SSH)
+  - 23 (Telnet)
+  - 25 (SMTP)
+  - 80 (HTTP)
+  -  139/445 (SMB)
+  - 3306 (MySQL)
+- # Open Ports Identified: vsftpd, OpenSSH, Apache, Samba, MySQL, Postfix
+
+## ⚠️ Challenges
+- Initially couldn’t get connectivity using NAT.
+- Solved by using dual adapters: one for internet (bridged) and one for isolated lab traffic (host-only).
+- Had to configure Promiscuous Mode correctly to allow VM-to-VM communication.
+
+## 🎯 Lessons Learned
+- Using multiple adapters provides both internet access and lab isolation.
+- Host-Only networking is ideal for keeping vulnerable VMs hidden from the outside world.
+- Nmap’s -sV option is key for service version detection and vulnerability research.
+
+## 🔜 Next Steps
+- Explore vulnerabilities on FTP, SMB, and MySQL services.
+- Document exploitation attempts in a follow-up lab repo.
+  
+
+   
 
